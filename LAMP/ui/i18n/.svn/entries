@@ -1,0 +1,90 @@
+8
+
+dir
+52
+svn+ssh://arclight/svn/rand/talks/LAMP/ui/i18n
+svn+ssh://arclight/svn/rand
+
+
+
+2009-02-25T06:09:59.274415Z
+52
+nat
+
+
+svn:special svn:externals svn:needs-lock
+
+s5-core.css
+file
+54
+
+
+
+2006-05-16T11:06:10.000000Z
+d19b9c5a99f08670db9040578e83fddf
+2009-02-25T06:25:28.543728Z
+54
+nat
+
+bg-slide.jpg
+file
+
+
+
+
+2004-10-16T19:35:06.000000Z
+fdcb151b8e7282773e9b4c0b6e52e431
+2009-02-25T06:09:59.274415Z
+52
+nat
+has-props
+
+framing.css
+file
+54
+
+
+
+2006-05-16T11:06:09.000000Z
+eb4acbcd3126d0100b39db04c85848e6
+2009-02-25T06:25:28.543728Z
+54
+nat
+
+slides.css
+file
+
+
+
+
+2004-10-03T02:19:50.000000Z
+49fad08b2baaa895d85f78c48dca5427
+2009-02-25T06:09:59.274415Z
+52
+nat
+
+bg-shade.png
+file
+
+
+
+
+2004-10-16T20:29:54.000000Z
+9453a69a5e37bf5e43972a26f0036b59
+2009-02-25T06:09:59.274415Z
+52
+nat
+has-props
+
+pretty.css
+file
+54
+
+
+
+2006-05-16T11:06:10.000000Z
+5b7e8f1dc1882b7ab611cfadc436d17e
+2009-02-25T06:25:28.543728Z
+54
+nat
+

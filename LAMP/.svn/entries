@@ -1,0 +1,59 @@
+8
+
+dir
+51
+svn+ssh://arclight/svn/rand/talks/LAMP
+svn+ssh://arclight/svn/rand
+
+
+
+2009-02-25T05:52:26.139776Z
+51
+nat
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+455ddc0f-1967-4b4a-8ed3-4ceb7a89ffae
+
+s5-blank.html
+file
+59
+
+
+
+2009-02-26T02:53:24.000000Z
+59009f2c58a948db9804fc1ddece0c2d
+2009-02-26T02:56:10.777644Z
+59
+nat
+
+index.html
+file
+
+
+
+
+2009-02-25T01:48:21.311282Z
+60e44614f8b8823783c30e68c7a1a45d
+2009-02-25T01:55:29.423743Z
+47
+nat
+has-props
+
+
+svn:special
+
+ui
+dir
+
