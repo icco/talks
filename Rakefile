@@ -25,6 +25,7 @@ task :vim do
    msg = 'Updating vim talk'
    Kernel.system("git add #{dir}")
    Kernel.system("git ci -m \"#{msg}\"")
+   Kernel.system("rm -rf #{repoDir}")
 end
  
 task :default => [ :vim ] do
