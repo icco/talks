@@ -1,4 +1,6 @@
-require 'grit'
+#!/usr/bin/env ruby
+
+require 'fileutils'
 
 task :vim do
    dir = 'vim'
@@ -16,7 +18,7 @@ task :vim do
    Kernel.system("showoff static")
 
    # rename dir
-   mv 'static' "../#{dir}"
+   FileUtils.mv('static', "../#{dir}")
 
    # commit
    msg = 'Updating vim talk'
