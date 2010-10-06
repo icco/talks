@@ -19,10 +19,12 @@ task :vim do
 
    # rename dir
    FileUtils.mv('static', "../#{dir}")
+   chdir('..')
 
    # commit
    msg = 'Updating vim talk'
-   Kernel.system("git ci -a -m \"#{msg}\"")
+   Kernel.system("git add #{dir}")
+   Kernel.system("git ci -m \"#{msg}\"")
 end
  
 task :default => [ :vim ] do
