@@ -86,11 +86,18 @@
 </ul>
 
 </div>
-</div><div class="slide" data-transition="none"><div class="content smbullets" ref="intro/intro/2">
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/2">
+<h1>Warning:</h1>
+
+<h2>Vim is meant to be used the way you feel natural doing it.</h2>
+
+<h3>What works for me may not work for you.</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smbullets" ref="intro/intro/3">
 <h1>How to Install?</h1>
 
 <ul>
-<li>Ubuntu: <code>sudo apt-get install vim-full</code></li>
+<li>Ubuntu, Debian: <code>sudo apt-get install vim-full</code></li>
 <li>Fedora: <code>sudo yum install vim</code></li>
 <li>Mac: <a href="http://code.google.com/p/macvim/">http://code.google.com/p/macvim/</a></li>
 <li>Windows: <a href="http://www.vim.org/download.php#pc">http://www.vim.org/download.php#pc</a></li>
@@ -98,10 +105,24 @@
 </ul>
 
 </div>
-</div><div class="slide" data-transition="none"><div class="content command" ref="intro/intro/3">
+</div><div class="slide" data-transition="none"><div class="content command" ref="intro/intro/4">
 <h2>How to Open?</h2>
 
 <h1>vim filename</h1>
+
+<h2>How to Close?</h2>
+
+<h1>:q (:wq, :qall, :wqall... etc.)</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/intro/5">
+<h1>How to get help?</h1>
+
+<ul>
+<li><a href="http://vimdoc.sourceforge.net/htmldoc/usr_toc.html">Vim Doc</a></li>
+<li><code>vimtutor</code></li>
+<li>Google.</li>
+</ul>
+
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="basics/basics/1">
 <h1>Modes</h1>
@@ -233,6 +254,135 @@
 <li>search + replace: <code>:s/a/b/</code></li>
 </ul>
 
+</div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="vimrc/vimrc/1">
+<h1>.vimrc</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="vimrc/vimrc/2">
+<h1>Warning:</h1>
+
+<h2>I said it once I'll say it again,</h2>
+
+<h1>Vim is meant to be used the way you feel natural doing it.</h1>
+
+<h2>What works for me may not work for you.</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="vimrc/vimrc/3">
+<h1>My .vimrc</h1>
+
+<h3><a href="http://github.com/icco/dotFiles/blob/master/vimrc">http://github.com/icco/dotFiles/blob/master/vimrc</a></h3>
+
+<h2>Short URL: <a href="http://is.gd/g4Pdj">http://is.gd/g4Pdj</a></h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="vimrc/vimrc/4">
+<h2>Some basics</h2>
+
+<h1>set nocompatible</h1>
+
+<h3>Fuck vi.</h3>
+
+<h1>syntax on</h1>
+
+<h3>Highlight your syntax</h3>
+
+<h1>set number</h1>
+
+<h3>Number your lines fool</h3>
+
+<h1>set showmode</h1>
+
+<h3>Show what mode you're in</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="vimrc/vimrc/5">
+<h2>Wrapping</h2>
+
+<h1>set expandtab</h1>
+
+<h3>expand tabs with spaces</h3>
+
+<h1>set tabstop=3</h1>
+
+<h3><Tab> move three characters</Tab>
+
+<h1>set shiftwidth=3</h1>
+
+<h3>&gt;&gt; and  shift 3 spaces</h3>
+
+<h1>"set textwidth=79</h1>
+
+<h3>hard wrap at 79 characters</h3>
+
+<h1>set softtabstop=3</h1>
+
+<h3>see spaces as tabs</h3>
+</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="vimrc/vimrc/6">
+<h1>modelines</h1>
+
+<h2><code>set modeline</code></h2>
+
+<h2><code>vim: set filetype=sh:</code></h2>
+
+<h3>check for a modeline</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="vimrc/vimrc/7">
+<h1>keybindings</h1>
+
+<ul>
+<li>vmap is for visual mode</li>
+<li>imap is for insert mode</li>
+<li>nmap is for command mode</li>
+<li>nore - don't check for recursive mappings.</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="vimrc/vimrc/8">
+<h1>keybinding examples</h1>
+
+<h2>Because we like our line numbers sometimes...</h2>
+
+<h3><code>:nnoremap &lt;C-N&gt;&lt;C-N&gt; :set invnumber&lt;CR&gt;</code></h3>
+
+<h2>But we don't always wanna wrap</h2>
+
+<h3><code>:nnoremap &lt;C-w&gt;&lt;C-w&gt; :set invwrap&lt;CR&gt;</code></h3>
+
+<h2>And all the cool kids need to paste</h2>
+
+<h3><code>:nnoremap &lt;C-p&gt;&lt;C-p&gt; :set invpaste&lt;CR&gt;</code></h3>
+
+<h2>Use the space key to open and close code folds</h2>
+
+<h3><code>:vnoremap &lt;space&gt; zf&lt;CR&gt;</code></h3>
+
+<h3><code>:nnoremap &lt;space&gt; zd&lt;CR&gt;</code></h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="vimrc/vimrc/9">
+<h2>tabs and workspaces</h2>
+
+<h1>:vs, :sp, ctrl + w</h1>
+
+<h1>:tabnew, :tabclose, :tabn, :tabp</h1>
+
+<h3>But seriously, let me just show you...</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smbullets" ref="closing/closing/1">
+<h1>Other resources</h1>
+
+<ul>
+<li><a href="http://arstechnica.com/open-source/guides/2009/05/vim-made-easy-how-to-get-your-favorite-ide-features-in-vim.ars">Ars Technica on Turning Vim into an IDE</a></li>
+<li><a href="http://vimcolorschemetest.googlecode.com/svn/html/index-c.html">Vim Color Scheme Test</a></li>
+<li><a href="http://news.ycombinator.com/item?id=1590713">Ask HN: What Vim Plugins do you use?</a></li>
+<li><a href="http://searchyc.com/vim?sort=by_points">Hacker News: Vim</a></li>
+<li><a href="http://www.delicious.com/calvin166/vim">My vim Bookmarks</a></li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="closing/closing/2">
+<h1>Questions?</h1>
+
+<h3><a href="http://natwelch.com/talks/vim">http://natwelch.com/talks/vim</a></h3>
 </div>
 </div>
 </div>
