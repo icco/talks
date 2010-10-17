@@ -15,7 +15,7 @@ task :vim do
 
    # showoff static
    chdir(repoDir)
-   Kernel.system("showoff static")
+   Kernel.system("/home/nat/Projects/showoff/bin/showoff static")
 
    # rename dir
    FileUtils.mv('static', "../#{dir}")
