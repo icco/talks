@@ -18,7 +18,7 @@ def build_showoff dir, repo, repoDir
    chdir('..')
 
    # commit
-   msg = 'Updating vim talk'
+   msg = "Updating #{dir} talk"
    Kernel.system("git add #{dir}")
    Kernel.system("git ci -m \"#{msg}\"")
    Kernel.system("rm -rf #{repoDir}")
