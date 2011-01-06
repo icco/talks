@@ -2,11 +2,7 @@
 
 require 'fileutils'
 
-task :vim do
-   dir = 'vim'
-   repo = 'git://github.com/icco/intro-to-vim-talk.git'
-   repoDir = 'intro-to-vim-talk'
-
+def build_showoff dir, repo, repoDir
    # delete old crap
    Kernel.system("rm -rf #{dir} #{repoDir}")
 
@@ -27,7 +23,23 @@ task :vim do
    Kernel.system("git ci -m \"#{msg}\"")
    Kernel.system("rm -rf #{repoDir}")
 end
+
+task :vim do
+   dir = 'vim'
+   repo = 'git://github.com/icco/intro-to-vim-talk.git'
+   repoDir = 'intro-to-vim-talk'
+
+   build_showoff dir, repo, repoDir
+end
+
+task :presence do
+   dir = 'presence'
+   repo = 'git@github.com:icco/web-presence-talk.git'
+   repoDir = 'web-presence-talk'
+
+   build_showoff dir, repo, repoDir
+end
  
-task :default => [ :vim ] do
+task :default => [ :vim, :presence ] do
    # ...
 end
