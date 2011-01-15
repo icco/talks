@@ -6,12 +6,12 @@ def build_showoff dir, repo, repoDir
    # delete old crap
    Kernel.system("rm -rf #{dir} #{repoDir}")
 
-   # clone git://github.com/icco/intro-to-vim-talk.git
+   # git clone git://github.com/icco/intro-to-vim-talk.git
    Kernel.system("git clone #{repo}")
 
    # showoff static
    chdir(repoDir)
-   Kernel.system("/home/nat/Projects/showoff/bin/showoff static")
+   Kernel.system("showoff static")
 
    # rename dir
    FileUtils.mv('static', "../#{dir}")
