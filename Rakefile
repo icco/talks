@@ -33,13 +33,21 @@ task :vim do
 end
 
 task :presence do
-   dir = 'presence'
+   dir = 'self-promotion'
    repo = 'git@github.com:icco/web-presence-talk.git'
    repoDir = 'web-presence-talk'
 
    build_showoff dir, repo, repoDir
 end
- 
-task :default => [ :vim, :presence ] do
+
+task :rsh do
+   dir = 'r-s-h'
+   repo = 'git@github.com:icco/ruby-sinatra-heroku-talk.git'
+   repoDir = 'ruby-sinatra-heroku-talk'
+
+   build_showoff dir, repo, repoDir
+end
+
+task :default => [ :vim, :presence, :rsh ] do
    # ...
 end
