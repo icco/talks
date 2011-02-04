@@ -65,7 +65,7 @@
 
 <div id="slides" class="offscreen" style="display:none;">
 <div class="slide" data-transition="none"><div class="content" ref="title/title/1">
-<h1>Fast Ruby Web Development</h1>
+<h1>Introduction to Fast Ruby Website Development</h1>
 
 <h2>February 8th, 2011</h2>
 
@@ -75,6 +75,23 @@
 <h1>Nat Welch</h1>
 
 <h3>natwelch.com  /  @icco</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="title/title/3">
+<h2>Follow along.</h2>
+
+<h3><a href="http://natwelch.com/talks/r-s-h">http://natwelch.com/talks/r-s-h</a></h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smbullets center" ref="title/title/4">
+<h1>Tonights Schedule*</h1>
+
+<ul>
+<li>Introduce Everything</li>
+<li>Write a web app</li>
+<li>Deploy a web app</li>
+</ul>
+
+
+<p>*Questions at any time</p>
 </div>
 </div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/intro/1">
 <h1>Important things I won't be covering:</h1>
@@ -92,61 +109,91 @@
 <ul>
 <li>200MB free space</li>
 <li>internet connection</li>
-<li>an hour</li>
+<li>an hour (maybe longer, this is addicting)</li>
 <li>curiosity</li>
 <li>git</li>
 <li>curl</li>
 </ul>
 
 </div>
-</div><div class="slide" data-transition="none"><div class="content" ref="rvm/rvm/1">
-<h1>INSTALL RUBY!</h1>
+</div><div class="slide" data-transition="none"><div class="content center" ref="rvm/rvm/1">
+<h1>Ruby.</h1>
+
+<p><img src="./file/rvm/blix-neg.gif" width="258" height="230" alt="blix"/></p>
+
+<h3>"A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smbullets" ref="rvm/rvm/2">
+<h1>INSTALL</h1>
 
 <ul>
 <li>We are going to use <a href="http://rvm.beginrescueend.com/">RVM</a>.</li>
 <li>Why? (Easy, fast)</li>
+<li>Ruby is not on the lab machines by default :(</li>
 </ul>
 
 </div>
-</div><div class="slide" data-transition="none"><div class="content commandline" ref="rvm/rvm/2">
-<p>$ bash &lt; &lt;( curl http://rvm.beginrescueend.com/releases/rvm-install-head )</p>
-
-<p>Initialized empty Git repository in /home/nwelch/.rvm/src/rvm/.git/</p>
-
-<p>remote: Counting objects: 16929, done.<br/>
-remote: Compressing objects: 100% (4822/4822), done.<br/>
-remote: Total 16929 (delta 11407), reused 15835 (delta 10649)<br/>
-Receiving objects: 100% (16929/16929), 2.97 MiB | 1462 KiB/s, done.<br/>
-Resolving deltas: 100% (11407/11407), done.<br/>
-Checking out files: 100% (303/303), done.</p>
-
-<p>RVM:  Shell scripts enabling management of multiple ruby environments.<br/>
-RTFM: http://rvm.beginrescueend.com/<br/>
-HELP: http://webchat.freenode.net/?channels=rvm (#rvm on irc.freenode.net)</p>
-</div>
 </div><div class="slide" data-transition="none"><div class="content" ref="rvm/rvm/3">
-<h1>Add to .bashrc or .bash_profile</h1>
+<pre><code>$ bash &lt; &lt;( curl http://is.gd/k2wjrp )
+</code></pre>
 
-<h2>At very bottom</h2>
+<h3><a href="http://is.gd/k2wjrp">http://is.gd/k2wjrp</a> points to <a href="http://rvm.beginrescueend.com/releases/rvm-install-head">http://rvm.beginrescueend.com/releases/rvm-install-head</a></h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="rvm/rvm/4">
+<h2>Add to .bashrc or .bash_profile</h2>
 
-<p>[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.</p>
+<pre><code># This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm"
+</code></pre>
+
+<h3>At very bottom</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="sinatra/sinatra/1">
+<h1>Sinatra</h1>
+
+<p><img src="./file/sinatra/sinatra.jpg" width="535" height="480" alt="sinatra"/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="sinatra/sinatra/2">
+<ul>
+<li>A Web Framework for ruby</li>
+<li>Super duper easy</li>
+<li><a href="http://www.sinatrarb.com/">decent documentation</a></li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="sinatra/sinatra/3">
+<h2>Install</h2>
+
+<h1>gem install sinatra</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="heroku/heroku/1">
+<h1>Heroku</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smbullets" ref="heroku/heroku/2">
+<ul>
+<li>A cloud application deployment system</li>
+<li><a href="http://docs.heroku.com/">Good Docs</a></li>
+<li>free for low loads, easy to dynamically scale</li>
+<li>uses git to deploy</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="heroku/heroku/3">
+<h2>Install</h2>
+
+<h1>gem install heroku</h1>
 </div>
 </div><div class="slide" data-transition="none"><div class="content smbullets" ref="closing/closing/1">
 <h1>Other resources</h1>
 
-<ul>
-<li><a href="http://arstechnica.com/open-source/guides/2009/05/vim-made-easy-how-to-get-your-favorite-ide-features-in-vim.ars">Ars Technica on Turning Vim into an IDE</a></li>
-<li><a href="http://vimcolorschemetest.googlecode.com/svn/html/index-c.html">Vim Color Scheme Test</a></li>
-<li><a href="http://news.ycombinator.com/item?id=1590713">Ask HN: What Vim Plugins do you use?</a></li>
-<li><a href="http://searchyc.com/vim?sort=by_points">Hacker News: Vim</a></li>
-<li><a href="http://www.delicious.com/calvin166/vim">My vim Bookmarks</a></li>
-</ul>
-
+<p class="..">wheee.</p>
 </div>
 </div><div class="slide" data-transition="none"><div class="content" ref="closing/closing/2">
-<h1>Questions?</h1>
+<h1>Well that was fun</h1>
 
-<h3><a href="http://natwelch.com/talks/r-s-h">http://natwelch.com/talks/r-s-h</a></h3>
+<h2>Let's write a web app.</h2>
+
+<h3><a href="https://github.com/icco/ruby-sinatra-heroku-talk/blob/master/script.md">https://github.com/icco/ruby-sinatra-heroku-talk/blob/master/script.md</a></h3>
 </div>
 </div>
 </div>
