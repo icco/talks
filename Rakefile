@@ -48,6 +48,14 @@ task :rsh do
    build_showoff dir, repo, repoDir
 end
 
+task :personal do
+   dir = 'personal-website-talk'
+   repo = 'git@github.com:icco/personal-website-talk.git'
+   repoDir = 'personal-website-talk'
+
+   build_showoff dir, repo, repoDir
+end
+
 task :default => [ :vim, :presence, :rsh ] do
    # ...
 end
