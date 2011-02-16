@@ -3,6 +3,11 @@
 require 'fileutils'
 
 def build_showoff dir, repo, repoDir
+   if dir == repoDir
+      puts "------ #{dir} IS THE SAME AS #{repoDir}!\n"
+      exit -1
+   end
+
    # delete old crap
    Kernel.system("rm -rf #{dir} #{repoDir}")
 
@@ -49,7 +54,7 @@ task :rsh do
 end
 
 task :personal do
-   dir = 'personal-website-talk'
+   dir = 'personal'
    repo = 'git@github.com:icco/personal-website-talk.git'
    repoDir = 'personal-website-talk'
 
