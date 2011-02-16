@@ -56,6 +56,6 @@ task :personal do
    build_showoff dir, repo, repoDir
 end
 
-task :default => [ :vim, :presence, :rsh ] do
+task :default => [ :vim, :presence, :rsh, :personal ] do
    # ...
 end
